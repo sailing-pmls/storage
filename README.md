@@ -12,10 +12,12 @@ Choose the cuDNN distribution that matches your CUDA installation. Version 5.1 w
 Finally, download cuDNN <version> Library for Linux.
 
 Installing cuDNN after download:
-Say your cuDNN file is called `cudnn-8.0-linux-x64-v5.1.tar`.
+Say your cuDNN file is called `cudnn-8.0-linux-x64-v5.1.tgz`.
 ```bash
+sudo gunzip cudnn-8.0-linux-x64-v5.1.tgz
 sudo cp cudnn-8.0-linux-x64-v5.1.tar /usr/local
 sudo tar -xf /usr/local/cudnn-8.0-linux-x64-v5.1.tar
+sudo rm /usr/local/cudnn-8.0-linux-x64-v5.1.tar
 ```
 
 To install poseidon run the following commands:
