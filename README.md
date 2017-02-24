@@ -2,11 +2,11 @@
 
 #### Poseidon for Ubuntu
 
-Prior to installation, make sure you have installed CUDA and cuDNN from the [Nvidia website](https://github.com/sailing-pmls/storage/raw/master/poseidon/deb/ubuntu14/poseidon-repo-u14.deb).
+Prior to installation, make sure you have installed CUDA and cuDNN from the [Nvidia website](https://developer.nvidia.com/cuda-downloads).
 
 CUDA installation instructions are straightforward on the website.
 
-Get [cuDNN](https://github.com/sailing-pmls/storage/raw/master/poseidon/deb/ubuntu14/poseidon-repo-u14.deb) (you will need to create an Nvidia account if you don't have one).
+Get [cuDNN](https://developer.nvidia.com/cudnn) (you will need to create an Nvidia account if you don't have one).
 
 Choose the cuDNN distribution that matches your CUDA installation. Version 5.1 works great for me (provided your CUDA version is > 7.0).
 Finally, download cuDNN <version> Library for Linux.
