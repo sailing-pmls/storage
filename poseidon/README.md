@@ -18,10 +18,18 @@ sudo cp cudnn-8.0-linux-x64-v5.1.tar /usr/local
 sudo tar -xf /usr/local/cudnn-8.0-linux-x64-v5.1.tar
 ```
 
-To install poseidon run the following commands:
+To install poseidon (for Ubuntu14) run the following commands:
 ```bash
-wget https://github.com/sailing-pmls/storage/raw/master/poseidon/deb/ubuntu14/poseidon-repo-u14.deb
-sudo dpkg -i poseidon-repo-u14.deb
+wget https://github.com/sailing-pmls/storage/raw/master/poseidon/deb/ubuntu14/poseidon-repo-ubuntu1404_0.10_amd64.deb
+sudo dpkg -i poseidon-repo-ubuntu1404_0.10_amd64.deb
 sudo apt-get update
 sudo apt-get install poseidon
+```
+
+Before running tensorflow, make sure to set your CUDA environment variables (you can also append this to your .bashrc file):
+```bash
+export CUDA_HOME=/usr/local/cuda && export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/cuda/lib64
+python
+>>> import tensorflow as tf
+. . .
 ```
